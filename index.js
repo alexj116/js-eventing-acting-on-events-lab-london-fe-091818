@@ -5,16 +5,16 @@ function moveDodgerRight() {
   var right = parseInt(rightNumbers, 10)
  
   if (right > 0) {
-    dodger.style.right = `${left - 1}px`
+    dodger.style.right = `${left + 1}px`
   }
 }
 
 
-//event listener left
+//event listener right
 
 document.addEventListener('keydown', function(e) {
   if (e.which === 39) {
-    moveDodgerLeft()
+    moveDodgerRight()
   }
 })
 
