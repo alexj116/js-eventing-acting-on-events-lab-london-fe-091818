@@ -20,19 +20,19 @@ document.addEventListener('keydown', function(e) {
 
 //right
 
-function moveDodgerLeft() {
+function moveDodgerRight() {
   var leftNumbers = dodger.style.left.replace('px', '')
   var left = parseInt(leftNumbers, 10)
  
-  if (left > 0) {
-    dodger.style.left = `${left - 1}px`
+  if (right > 0) {
+    dodger.style.right = `${left + 1}px`
   }
 }
 
 //event listener right
 
 document.addEventListener('keydown', function(e) {
-  if (e.which === 37) {
+  if (e.which === 39) {
     moveDodgerLeft()
   }
 })
