@@ -10,7 +10,7 @@ function moveDodgerLeft() {
 }
 
 
-//event listener
+//event listener left
 
 document.addEventListener('keydown', function(e) {
   if (e.which === 37) {
@@ -28,3 +28,11 @@ function moveDodgerLeft() {
     dodger.style.left = `${left - 1}px`
   }
 }
+
+//event listener right
+
+document.addEventListener('keydown', function(e) {
+  if (e.which === 37) {
+    moveDodgerLeft()
+  }
+})
